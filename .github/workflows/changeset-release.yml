@@ -23,6 +23,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull
           VERSION=$(node -p "require('./package.json').version")
           git tag "$VERSION"
           git push origin "$VERSION"
