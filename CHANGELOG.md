@@ -1,5 +1,21 @@
 # test-changeset-08-05-2026
 
+## 1.0.15
+
+### Patch Changes
+
+- [`2fde7af`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/2fde7af097eba6a68eaaf40e7e87229cc2827bc1) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 4444
+
+- [`544963f`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/544963f6cc3fe28e380b9e4b1ca461038a122291) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 34444
+
+- [`2e385d7`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/2e385d74d8531dcfe4d67de3301ba6d560b85bd2) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 5555
+
+- [`c178aac`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/c178aac5705fd4eb73d2d21639a002f4df2531ed) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 3333
+
+- [`eee3a10`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/eee3a105bd69b9970ea13cfe7cb2beb847f1eadd) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 444
+
+- [`f298d02`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/f298d02c3742fa1bcaafe67cb3e394afca6408b1) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 4444
+
 ## 1.0.14
 
 ### Patch Changes
