@@ -1,5 +1,15 @@
 # test-changeset-08-05-2026
 
+## 1.0.36
+
+### Patch Changes
+
+- [`7a98150`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/7a981500071d4acfdda7eb9d321227212d887ac3) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - bump 3
+
+- [`fb7ba4f`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/fb7ba4f2a02452ba7b973d463b79238028efb5bf) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - bump 2
+
+- [`f20ccba`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/f20ccbac7b204f5a69168a02f884aea72a14a1f1) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 54545
+
 ## 1.0.35
 
 ### Patch Changes
