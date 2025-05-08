@@ -23,11 +23,20 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run `npx changeset add`
+      - name: Generate changeset manually
+        run: |
+          mkdir -p .changeset
+          FILENAME=".changeset/auto-pr-${{ github.event.pull_request.number }}.md"
+          echo "---" > $FILENAME
+          echo '"auto-package": patch' >> $FILENAME  # Thay "auto-package" bằng tên real package
+          echo "---" >> $FILENAME
+          echo "" >> $FILENAME
+          echo "Auto changeset for PR #${{ github.event.pull_request.number }} - ${{ github.event.pull_request.title }}" >> $FILENAME
+
+      - name: Commit changeset
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          npx changeset add --empty --summary "Auto changeset for PR #${{ github.event.pull_request.number }} - ${{ github.event.pull_request.title }}"
           git add .changeset
           git commit -m "chore: add changeset for PR #${{ github.event.pull_request.number }}" || echo "No changes to commit"
           git push origin HEAD
