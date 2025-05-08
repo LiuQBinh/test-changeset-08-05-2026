@@ -1,5 +1,11 @@
 # test-changeset-08-05-2026
 
+## 1.0.6
+
+### Patch Changes
+
+- 2af8166: 3333
+
 ## 1.0.5
 
 ### Patch Changes
