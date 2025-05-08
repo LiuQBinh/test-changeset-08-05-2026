@@ -1,44 +1,33 @@
-name: Create GitHub Release
+name: Changeset on PR
 
 on:
   pull_request:
     types: [opened]
 
 jobs:
-  release:
-    name: Version and release
+  add-changeset:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: pnpm/action-setup@v4
+      - name: Checkout repo (source branch)
+        uses: actions/checkout@v3
         with:
-          version: 10.10.0
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
 
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 23
-          cache: 'pnpm'
 
-      - run: pnpm install
-
-      # - name: Create GitHub Release
-      #   uses: changesets/action@v1
-      #   with:
-      #     version: npx changeset version
-      #     publish: npx changeset tag
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      #     NODE_ENV: "production"
-
+      - name: Install dependencies
+        run: npm install
 
       - name: Run `npx changeset add`
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          npx changeset add --empty --summary "Automated changeset for PR #${{ github.event.pull_request.number }}"
+          npx changeset add --empty --summary "Auto changeset for PR #${{ github.event.pull_request.number }}"
           git add .changeset
-          git commit -m "chore: add changeset for PR #${{ github.event.pull_request.number }}"
-          git push
+          git commit -m "chore: add changeset for PR #${{ github.event.pull_request.number }}" || echo "No changes to commit"
+          git push origin HEAD
