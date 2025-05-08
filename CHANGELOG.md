@@ -1,5 +1,13 @@
 # test-changeset-08-05-2026
 
+## 2.0.0
+
+### Major Changes
+
+- [`6a76482`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/6a76482c6d03e3678dc16f329a979d73cd2f68a5) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 2222
+
+- [`4df6a1a`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/4df6a1a1935d0e9357d922fe4c856899fb905fa4) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 3
+
 ## 1.0.37
 
 ### Patch Changes
