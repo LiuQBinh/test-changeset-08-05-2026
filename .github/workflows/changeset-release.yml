@@ -24,6 +24,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           npx changeset version
+          npm install
 
       - name: Pull latest changes from remote
         run: |
