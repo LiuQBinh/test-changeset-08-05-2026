@@ -1,5 +1,11 @@
 # test-changeset-08-05-2026
 
+## 1.0.5
+
+### Patch Changes
+
+- ff52811: 3333
+
 ## 1.0.4
 
 ### Patch Changes
