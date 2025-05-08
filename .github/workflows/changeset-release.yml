@@ -25,6 +25,8 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           npx changeset version
           npm install
+          git add .
+          git commit -m "chore: add changeset for PR #${{ github.event.pull_request.number }}" || echo "No changes to commit"
 
       - name: Pull latest changes from remote
         run: |
