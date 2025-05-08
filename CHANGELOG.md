@@ -1,5 +1,57 @@
 # test-changeset-08-05-2026
 
+## 1.0.34
+
+### Patch Changes
+
+- [`3e67a36`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/3e67a36c9d486fab0752eb2436912fcb443323ac) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - dwdwd
+
+## 1.0.33
+
+### Patch Changes
+
+- [`2aa7e84`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/2aa7e846385c0c5f982b4b8aea5d03a1cb43eb41) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - dw
+
+## 1.0.32
+
+### Patch Changes
+
+- [`28b945b`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/28b945b04a5818c837fff09c887f7699bdcd1ca3) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 3333
+
+- 333
+
+## 1.0.31
+
+### Patch Changes
+
+- [`8d59c9f`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/8d59c9f3014553b7fe051e8ab868f1a7cb1a5a45) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 98989898989
+
+- 3333
+
+## 1.0.30
+
+### Patch Changes
+
+- 2222
+
+- [`8f1e8da`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/8f1e8dad2aac75ca78499817caa166580494cbbf) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 3333
+
+## 1.0.29
+
+### Patch Changes
+
+- 2222
+
+- [`5ab3522`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/5ab352275cc59565c313cafbb8f0e2a26105de0e) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 4444
+
+## 1.0.28
+
+### Patch Changes
+
+- [`5ac8f9f`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/5ac8f9f7806bfd7e6b0e4c43a77050e14841c0b5) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 2222
+
+- [`b982616`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/b982616356ef1d4dc328442a3318eea021319dd8) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 3333
+
 ## 1.0.27
 
 ### Patch Changes
