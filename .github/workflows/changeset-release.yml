@@ -1,0 +1,45 @@
+name: Release on Merge with Label
+
+on:
+  workflow_dispatch:  # Cho phép chạy tay từ GitHub UI
+
+jobs:
+  release-if-labeled:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check if PR has release label
+        id: check_label
+        run: |
+          echo "LABEL_EXISTS=false" >> $GITHUB_ENV
+          for label in ${{ toJson(github.event.pull_request.labels) }}; do
+            if echo "$label" | grep -qi '"name":"release"'; then
+              echo "LABEL_EXISTS=true" >> $GITHUB_ENV
+              break
+            fi
+          done
+
+      - name: Run changeset version and tag
+        if: env.LABEL_EXISTS == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          npx changeset version
+          git add .
+          git commit -m "chore(release): apply version bumps"
+          git push origin HEAD
+          npx changeset tag
