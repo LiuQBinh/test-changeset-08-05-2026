@@ -1,5 +1,11 @@
 # test-changeset-08-05-2026
 
+## 1.0.34
+
+### Patch Changes
+
+- [`3e67a36`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/3e67a36c9d486fab0752eb2436912fcb443323ac) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - dwdwd
+
 ## 1.0.33
 
 ### Patch Changes
