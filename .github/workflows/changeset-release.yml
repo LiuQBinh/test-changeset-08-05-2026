@@ -19,12 +19,21 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run changeset version and tag
+      - name: Run changeset version
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull
-          VERSION=$(node -p "require('./package.json').version")
-          git tag "$VERSION"
-          git push origin "$VERSION"
-          gh release create $VERSION --notes "$(awk -v version="$VERSION" '/^## '"$VERSION"'/{p=1;next} /^## [0-9]+\.[0-9]+\.[0-9]+/{p=0} p' CHANGELOG.md)" 
+          npx changeset version
+
+      - name: Pull latest changes from remote
+        run: |
+          git pull origin main --rebase  # Pull latest changes from main branch
+
+      - name: Create GitHub Release and Tag
+        run: |
+          git tag $(node -p "require('./package.json').version")   # Tạo tag từ version trong package.json
+          git push origin $(node -p "require('./package.json').version")  # Đẩy tag lên GitHub
+          gh release create $(node -p "require('./package.json').version") dist/* --title "Release $(node -p "require('./package.json').version")" --notes "Release notes for $(node -p "require('./package.json').version")"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_ENV: "production"
