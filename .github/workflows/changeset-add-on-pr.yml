@@ -1,10 +1,6 @@
 name: Changeset on PR Merge
 
 on:
-  pull_request:
-    types: [closed]
-    branches:
-      - 'release/**'
   push:
     branches:
       - 'release/**'
