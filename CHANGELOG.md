@@ -1,5 +1,13 @@
 # test-changeset-08-05-2026
 
+## 2.0.1
+
+### Patch Changes
+
+- [#11](https://github.com/LiuQBinh/test-changeset-08-05-2026/pull/11) [`6f5a5e0`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/6f5a5e0150edd4f32877ea41e08882c6ca82c34c) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - Auto changeset for PR #11 - Update dummy.txt
+
+- [#13](https://github.com/LiuQBinh/test-changeset-08-05-2026/pull/13) [`9329244`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/93292449125f2bca96715b5c11707beb3d5b8a13) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - Auto changeset for PR #13 - Update dummy.txt
+
 ## 2.0.0
 
 ### Major Changes
