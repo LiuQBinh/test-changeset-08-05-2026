@@ -3,7 +3,7 @@ name: Changeset on PR Merge
 on:
   push:
     branches:
-      - 'release/**'
+      - release/**
 
 jobs:
   add-changeset:
