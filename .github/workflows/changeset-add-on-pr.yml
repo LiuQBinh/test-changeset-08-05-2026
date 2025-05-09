@@ -1,19 +1,25 @@
-name: Changeset on PR
+name: Changeset on PR or Manual Commit
 
-push:
-  branches:
-    - main  # or the branch you merge into
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [closed]
 
 jobs:
   add-changeset:
+    if: |
+      github.event_name == 'push' ||
+      (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo (source branch)
+      - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event_name == 'push' && github.ref || github.event.pull_request.head.ref }}
+          repository: ${{ github.event_name == 'push' && github.repository || github.event.pull_request.head.repo.full_name }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -26,17 +32,23 @@ jobs:
       - name: Generate changeset manually
         run: |
           mkdir -p .changeset
-          FILENAME=".changeset/auto-pr-${{ github.event.pull_request.number }}.md"
+          if [ "${{ github.event_name }}" == "push" ]; then
+            FILENAME=".changeset/manual-commit-$(date +%s).md"
+            TITLE="Manual commit to main"
+          else
+            FILENAME=".changeset/auto-pr-${{ github.event.pull_request.number }}.md"
+            TITLE="Auto changeset for PR #${{ github.event.pull_request.number }} - ${{ github.event.pull_request.title }}"
+          fi
           echo "---" > $FILENAME
-          echo '"test-changeset-08-05-2026": patch' >> $FILENAME
+          echo '"auto-generated-changeset": patch' >> $FILENAME
           echo "---" >> $FILENAME
           echo "" >> $FILENAME
-          echo "Auto changeset for PR #${{ github.event.pull_request.number }} - ${{ github.event.pull_request.title }}" >> $FILENAME
+          echo "$TITLE" >> $FILENAME
 
-      - name: Commit changeset
+      - name: Commit and push changeset
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .changeset
-          git commit -m "chore: add changeset for PR #${{ github.event.pull_request.number }}" || echo "No changes to commit"
+          git commit -m "chore: add changeset" || echo "No changes to commit"
           git push origin HEAD
