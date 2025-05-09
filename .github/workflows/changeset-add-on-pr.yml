@@ -3,6 +3,8 @@ name: Changeset on PR Merge
 on:
   pull_request:
     types: [closed]
+    branches:
+      - main  # chỉ chạy khi PR merge vào main
 
 jobs:
   add-changeset:
