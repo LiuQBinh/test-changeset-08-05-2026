@@ -1,5 +1,19 @@
 # test-changeset-08-05-2026
 
+## 2.0.0
+
+### Major Changes
+
+- [`b50e411`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/b50e411c1483e42261bde7e0a2e3e116bb997658) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - 2
+
+### Minor Changes
+
+- [`b50e411`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/b50e411c1483e42261bde7e0a2e3e116bb997658) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - mi
+
+### Patch Changes
+
+- [`b50e411`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/b50e411c1483e42261bde7e0a2e3e116bb997658) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - p
+
 ## 1.1.0
 
 ### Minor Changes
