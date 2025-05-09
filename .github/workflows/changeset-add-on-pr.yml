@@ -5,7 +5,9 @@ on:
     types: [closed]
     branches:
       - 'release/**'
-      - 'hotfix'
+  push:
+    branches:
+      - 'release/**'
 
 jobs:
   add-changeset:
