@@ -1,5 +1,11 @@
 # test-changeset-08-05-2026
 
+## 2.0.4
+
+### Patch Changes
+
+- [#26](https://github.com/LiuQBinh/test-changeset-08-05-2026/pull/26) [`cd69b7c`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/cd69b7c1f50595883fac9d085e4e6d2d51bbf1d8) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - Auto changeset for PR #25 - Update 000000
+
 ## 2.0.3
 
 ### Patch Changes
