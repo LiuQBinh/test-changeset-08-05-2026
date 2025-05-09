@@ -1,13 +1,14 @@
 name: Changeset on PR Merge
 
 on:
-  push:
+  pull_request:
+    types: [closed]
     branches:
-      - release/SEC-1234
+      - 'release/**'  # chỉ chạy khi PR merge vào nhánh bắt đầu bằng 'release/'
 
 jobs:
   add-changeset:
-    # if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
