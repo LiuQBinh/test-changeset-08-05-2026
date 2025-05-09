@@ -1,5 +1,11 @@
 # test-changeset-08-05-2026
 
+## 2.0.100
+
+### Patch Changes
+
+- [#33](https://github.com/LiuQBinh/test-changeset-08-05-2026/pull/33) [`a73e71a`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/a73e71a84ce29071da0b0682316e3ba13279ea46) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - Auto changeset for PR #32 - Release/sec 1234 child1
+
 ## 2.0.99
 
 ### Patch Changes
