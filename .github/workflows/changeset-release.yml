@@ -1,7 +1,10 @@
 name: Manual Release with Changeset
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
+
 
 jobs:
   release:
