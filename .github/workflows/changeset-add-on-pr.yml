@@ -37,7 +37,7 @@ jobs:
             TITLE="Auto changeset for PR #${{ github.event.pull_request.number }} - ${{ github.event.pull_request.title }}"
           fi
           echo "---" > $FILENAME
-          echo '"auto-generated-changeset": patch' >> $FILENAME
+          echo '"test-changeset-08-05-2026": patch' >> $FILENAME
           echo "---" >> $FILENAME
           echo "" >> $FILENAME
           echo "$TITLE" >> $FILENAME
