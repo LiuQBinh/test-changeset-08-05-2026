@@ -1,8 +1,8 @@
 name: Changeset on PR
 
-on:
-  pull_request:
-    types: [opened, reopened]
+push:
+  branches:
+    - main  # or the branch you merge into
 
 jobs:
   add-changeset:
