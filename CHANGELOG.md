@@ -1,5 +1,17 @@
 # test-changeset-08-05-2026
 
+## 2.0.3
+
+### Patch Changes
+
+- [`1f456d4`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/1f456d43c8052124228b15bd15678a3843a66ace) Thanks [@github-actions[bot]](https://github.com/github-actions%5Bbot%5D)! - Auto changeset for PR #19 - Update 000000
+
+- [`aea8fcb`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/aea8fcbdaf2db11c61791da5eeee1afc12c6b8d4) Thanks [@github-actions[bot]](https://github.com/github-actions%5Bbot%5D)! - Auto changeset for PR #20 - Update Untitled-1
+
+- [`5ae45e0`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/5ae45e084e6b1eae5427c0c6db35c37e49699500) Thanks [@github-actions[bot]](https://github.com/github-actions%5Bbot%5D)! - Auto changeset for PR #21 - Update README.md
+
+- [`6bed7d5`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/6bed7d52099f0a6721a195f5abb09add3a1aadc4) Thanks [@github-actions[bot]](https://github.com/github-actions%5Bbot%5D)! - Auto changeset for PR #22 - tôi đã change title, lần 2
+
 ## 2.0.2
 
 ### Patch Changes
