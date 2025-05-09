@@ -4,7 +4,10 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - 'release/**'  # chỉ chạy khi PR merge vào nhánh bắt đầu bằng 'release/'
+      - 'release/**'
+  push:
+    branches:
+      - 'release/**'
 
 jobs:
   add-changeset:
