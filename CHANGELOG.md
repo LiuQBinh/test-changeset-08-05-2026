@@ -1,6 +1,6 @@
 # test-changeset-08-05-2026
 
-## 2.0.5
+## 2.0.99
 
 ### Patch Changes
 
