@@ -1,5 +1,11 @@
 # test-changeset-08-05-2026
 
+## 2.0.99
+
+### Patch Changes
+
+- [#29](https://github.com/LiuQBinh/test-changeset-08-05-2026/pull/29) [`77f0afc`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/77f0afced1b2201aaf8311b458f827d3e8135bcf) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - Auto changeset for PR #28 - Update dummy.txt
+
 ## 2.0.4
 
 ### Patch Changes
