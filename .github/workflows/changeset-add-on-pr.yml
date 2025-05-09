@@ -1,9 +1,6 @@
 name: Changeset on PR or Manual Commit
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     types: [closed]
 
