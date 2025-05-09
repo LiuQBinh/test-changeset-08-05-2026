@@ -1,5 +1,11 @@
 # test-changeset-08-05-2026
 
+## 2.0.2
+
+### Patch Changes
+
+- [#14](https://github.com/LiuQBinh/test-changeset-08-05-2026/pull/14) [`d2cf66e`](https://github.com/LiuQBinh/test-changeset-08-05-2026/commit/d2cf66e325a5d3ab5cab0c86829a67c62d72748b) Thanks [@LiuQBinh](https://github.com/LiuQBinh)! - Auto changeset for PR #14 - Update dummy.txt
+
 ## 2.0.1
 
 ### Patch Changes
